@@ -1,0 +1,32 @@
+{
+  "scale": "full",
+  "seed": 20261022,
+  "period": {
+    "order_start": "2025-12-29",
+    "settlement_start": "2026-01-02",
+    "settlement_end": "2026-07-20",
+    "statement_end": "2026-07-22",
+    "run_at": "2026-07-23T06:00:00+00:00"
+  },
+  "rules": {
+    "amount_tolerance_minor": 1,
+    "date_window_days": 3,
+    "settlement_grace_days": 4
+  },
+  "targets": {
+    "name": "full",
+    "merchants": 2000,
+    "orders": 50000,
+    "attempts": 55000,
+    "batches": 1000,
+    "bank_lines": 5000
+  },
+  "anomaly_counts": {
+    "DUPLICATE_SETTLEMENT_LINE": 30,
+    "BANK_AMOUNT_DIFFERS_BY_FEE": 20,
+    "REFUND_BEFORE_CAPTURE": 30,
+    "UNMATCHED_RECORD_DROPPED_LINE": 30,
+    "UNMATCHED_RECORD_ORPHAN_BANK": 10,
+    "CURRENCY_MISMATCH": 15
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "detection": [
+    {
+      "exception_type": "CURRENCY_MISMATCH",
+      "expected": 15,
+      "detected": 15,
+      "true_positive": 15,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "exception_type": "DUPLICATE_SETTLEMENT_LINE",
+      "expected": 30,
+      "detected": 30,
+      "true_positive": 30,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "exception_type": "DUPLICATE_WEBHOOK",
+      "expected": 1791,
+      "detected": 1791,
+      "true_positive": 1791,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "exception_type": "FEE_DIFFERENCE",
+      "expected": 20,
+      "detected": 20,
+      "true_positive": 20,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "exception_type": "MISSING_SETTLEMENT_LINE",
+      "expected": 30,
+      "detected": 30,
+      "true_positive": 30,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "exception_type": "REFUND_BEFORE_CAPTURE",
+      "expected": 30,
+      "detected": 30,
+      "true_positive": 30,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "exception_type": "UNMATCHED_BANK_LINE",
+      "expected": 10,
+      "detected": 10,
+      "true_positive": 10,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "exception_type": "ALL (micro)",
+      "expected": 1926,
+      "detected": 1926,
+      "true_positive": 1926,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  ],
+  "normal_case_decisions": [
+    {
+      "issue_type": "DELAYED_SETTLEMENT",
+      "expected_decision": "MATCHED",
+      "cases": 2006,
+      "correct": 2006,
+      "accuracy": 1.0
+    },
+    {
+      "issue_type": "MISSING_BANK_REFERENCE",
+      "expected_decision": "MATCHED_FUZZY",
+      "cases": 35,
+      "correct": 35,
+      "accuracy": 1.0
+    },
+    {
+      "issue_type": "ROUNDING_DIFFERENCE",
+      "expected_decision": "MATCHED_WITHIN_TOLERANCE",
+      "cases": 24,
+      "correct": 24,
+      "accuracy": 1.0
+    },
+    {
+      "issue_type": "SPLIT_PAYOUT",
+      "expected_decision": "MATCHED_SPLIT",
+      "cases": 60,
+      "correct": 60,
+      "accuracy": 1.0
+    }
+  ],
+  "idempotency": {
+    "same_input_twice_identical_output": true,
+    "replayed_full_webhook_feed_canonical_events_unchanged": true,
+    "replayed_feed_matches_unchanged": true,
+    "replayed_feed_non_duplicate_exceptions_unchanged": true,
+    "replayed_feed_extra_duplicates_flagged": 109237
+  },
+  "kpis": {
+    "event_settlement_match_rate": 0.9994,
+    "settlement_line_match_rate": 0.9994,
+    "batch_bank_match_rate": 0.965,
+    "processor_bank_line_match_rate": 0.9579,
+    "status_breakdown": {
+      "PROCESSOR_EVENT": {
+        "MATCHED": 50707,
+        "OUT_OF_PERIOD": 544,
+        "IN_TRANSIT": 168,
+        "EXCEPTION": 30
+      },
+      "SETTLEMENT_LINE": {
+        "MATCHED": 50707,
+        "EXCEPTION": 30
+      },
+      "SETTLEMENT_BATCH": {
+        "MATCHED": 965,
+        "EXCEPTION": 35
+      },
+      "BANK_LINE": {
+        "OUT_OF_SCOPE": 3930,
+        "MATCHED": 1025,
+        "EXCEPTION": 25,
+        "PARTIAL": 20
+      }
+    },
+    "settled_net_usd_equiv": 2802584.26,
+    "matched_net_usd_equiv": 2692699.54,
+    "amount_match_rate": 0.9608,
+    "exceptions_total": 1926,
+    "exceptions_by_type": {
+      "DUPLICATE_WEBHOOK": 1791,
+      "REFUND_BEFORE_CAPTURE": 30,
+      "DUPLICATE_SETTLEMENT_LINE": 30,
+      "MISSING_SETTLEMENT_LINE": 30,
+      "FEE_DIFFERENCE": 20,
+      "CURRENCY_MISMATCH": 15,
+      "UNMATCHED_BANK_LINE": 10
+    },
+    "exceptions_by_severity": {
+      "LOW": 1791,
+      "HIGH": 90,
+      "MEDIUM": 30,
+      "CRITICAL": 15
+    },
+    "exceptions_by_status": {
+      "RESOLVED": 1871,
+      "OPEN": 30,
+      "ESCALATED": 25
+    },
+    "resolution_rate": 0.9714,
+    "open_exception_amount_usd_equiv": 34968.25
+  }
+}
