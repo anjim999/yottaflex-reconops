@@ -227,20 +227,20 @@
     {
       "path": "run_config.json",
       "rows": null,
-      "bytes": 774,
-      "sha256": "bc99e0203b97d733299e47e7c338e9b4fe4bf7f05bd27668de68eba38055d9f4"
+      "bytes": 743,
+      "sha256": "bbf6d8bd217fd9ae5dee467c6f4710bdd45c0757d6c2c796e6b5cdd7f1f8d3a8"
     },
     {
       "path": "sql/schema.sql",
       "rows": null,
-      "bytes": 12763,
-      "sha256": "cda5c07aa6f03efe492772d954c8394522405ac83f006e59f69f448964d676e1"
+      "bytes": 12496,
+      "sha256": "9f67f72bbe5ac87d3da01b2c74a9acfb6255afb345898c49bd1e87cf67f91327"
     },
     {
       "path": "sql/seed.sql",
       "rows": null,
-      "bytes": 10959603,
-      "sha256": "eeb86d7cde64dbf330c654e25106ac848b54317c837b2109c2ec8049097ffa42"
+      "bytes": 10872669,
+      "sha256": "469eb0c1a9842418deab65d9cb412213a82b40d59c784eb1d8508d03e01a7e8f"
     }
   ]
 }
