@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+html, body, #root { height: 100%; }
+body { @apply bg-slate-100/70 text-slate-800 antialiased; font-feature-settings: "cv11", "ss01"; }
+.id { @apply whitespace-nowrap font-mono text-[12px] tracking-tight; }
+.num { @apply tabular-nums whitespace-nowrap; }
+
+@keyframes toast-in { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: none } }
+.toast-in { animation: toast-in .18s ease-out; }
