@@ -1,0 +1,238 @@
+{
+  "scale": "starter",
+  "seed": 20261022,
+  "runs": 2,
+  "files_compared": 38,
+  "identical": true,
+  "differences": [],
+  "files": [
+    {
+      "path": "ground_truth/ground_truth.csv",
+      "rows": 390,
+      "sha256_run1": "cf6f41e879b9c9a9628ddf835987be7555321827c182d8e863eafad55a835bd4",
+      "sha256_run2": "cf6f41e879b9c9a9628ddf835987be7555321827c182d8e863eafad55a835bd4"
+    },
+    {
+      "path": "ground_truth/json/ground_truth.json",
+      "rows": null,
+      "sha256_run1": "12f52556fd8286a32c0da414045370b3d91228d5d5e80cd390ba63ba0dc1297d",
+      "sha256_run2": "12f52556fd8286a32c0da414045370b3d91228d5d5e80cd390ba63ba0dc1297d"
+    },
+    {
+      "path": "input/bank_statement_lines.csv",
+      "rows": 500,
+      "sha256_run1": "09c4eb23f408b7b7c7a9a6a67fb6177c9a19f02039c28e35f8c6d466306c7b4a",
+      "sha256_run2": "09c4eb23f408b7b7c7a9a6a67fb6177c9a19f02039c28e35f8c6d466306c7b4a"
+    },
+    {
+      "path": "input/json/bank_statement_lines.json",
+      "rows": null,
+      "sha256_run1": "281c3c0787ed3f1d3eda1c1df509763d2a731b8c009f3bb4c74a7d8c1bc202f4",
+      "sha256_run2": "281c3c0787ed3f1d3eda1c1df509763d2a731b8c009f3bb4c74a7d8c1bc202f4"
+    },
+    {
+      "path": "input/json/merchant_fee_schedules.json",
+      "rows": null,
+      "sha256_run1": "72c2beaab1c02171a0c36bb22e80e600ed07c1fb766fe66a52aa02390db38490",
+      "sha256_run2": "72c2beaab1c02171a0c36bb22e80e600ed07c1fb766fe66a52aa02390db38490"
+    },
+    {
+      "path": "input/json/merchants.json",
+      "rows": null,
+      "sha256_run1": "fb7b7b18f42fe400059daedd2cd8d9769c65bcea76704300f90c0baf0479b444",
+      "sha256_run2": "fb7b7b18f42fe400059daedd2cd8d9769c65bcea76704300f90c0baf0479b444"
+    },
+    {
+      "path": "input/json/order_status_history.json",
+      "rows": null,
+      "sha256_run1": "6dd638c85e5b69bbd01d06c4bc4e7277baab3fe07ef4d33bea1ff17814883a5b",
+      "sha256_run2": "6dd638c85e5b69bbd01d06c4bc4e7277baab3fe07ef4d33bea1ff17814883a5b"
+    },
+    {
+      "path": "input/json/payment_attempts.json",
+      "rows": null,
+      "sha256_run1": "be3fa508ad1c8bc7b982d9088143df53d72254855317ce3dd0aec37697949375",
+      "sha256_run2": "be3fa508ad1c8bc7b982d9088143df53d72254855317ce3dd0aec37697949375"
+    },
+    {
+      "path": "input/json/payment_orders.json",
+      "rows": null,
+      "sha256_run1": "e8a06a23a2567e41c1a36d363911627bd9b4066a994e0f0e6e44b4bb08cdd0c0",
+      "sha256_run2": "e8a06a23a2567e41c1a36d363911627bd9b4066a994e0f0e6e44b4bb08cdd0c0"
+    },
+    {
+      "path": "input/json/processor_events.json",
+      "rows": null,
+      "sha256_run1": "3d294a1735e11828ad1465688a62dda4b696b0a35201f22943b41171ddf7678f",
+      "sha256_run2": "3d294a1735e11828ad1465688a62dda4b696b0a35201f22943b41171ddf7678f"
+    },
+    {
+      "path": "input/json/settlement_batches.json",
+      "rows": null,
+      "sha256_run1": "63ff3811b64fa2f58a7496a68f04621474e6a59d5d50416fb1b1bbdb4cdfbae1",
+      "sha256_run2": "63ff3811b64fa2f58a7496a68f04621474e6a59d5d50416fb1b1bbdb4cdfbae1"
+    },
+    {
+      "path": "input/json/settlement_lines.json",
+      "rows": null,
+      "sha256_run1": "a9715c177149c90d2ecf96fa1ec84244387f86da13999eef47a07e11dd33e739",
+      "sha256_run2": "a9715c177149c90d2ecf96fa1ec84244387f86da13999eef47a07e11dd33e739"
+    },
+    {
+      "path": "input/json/webhook_deliveries.json",
+      "rows": null,
+      "sha256_run1": "2cf241eac09229197e4a64029871b2409210164ccb16e7ed8da0ef52d5668480",
+      "sha256_run2": "2cf241eac09229197e4a64029871b2409210164ccb16e7ed8da0ef52d5668480"
+    },
+    {
+      "path": "input/merchant_fee_schedules.csv",
+      "rows": 221,
+      "sha256_run1": "421dec5d883a9c70fedef663c05ec1267851356dd06f116910ef50b6a6b521af",
+      "sha256_run2": "421dec5d883a9c70fedef663c05ec1267851356dd06f116910ef50b6a6b521af"
+    },
+    {
+      "path": "input/merchants.csv",
+      "rows": 200,
+      "sha256_run1": "61f9c7545b730238ce4a2d7aa6429364a00d6d912c0510cb4cf46187db22da53",
+      "sha256_run2": "61f9c7545b730238ce4a2d7aa6429364a00d6d912c0510cb4cf46187db22da53"
+    },
+    {
+      "path": "input/order_status_history.csv",
+      "rows": 15066,
+      "sha256_run1": "5775183c3efb930b6179fb9298cb112467b5c26007541fac0fa6c1582dc27534",
+      "sha256_run2": "5775183c3efb930b6179fb9298cb112467b5c26007541fac0fa6c1582dc27534"
+    },
+    {
+      "path": "input/payment_attempts.csv",
+      "rows": 5500,
+      "sha256_run1": "448ccf93db7b3a600d6ce00d5ab402b7a47458aa02cdf3f8f6db21cd66c116f8",
+      "sha256_run2": "448ccf93db7b3a600d6ce00d5ab402b7a47458aa02cdf3f8f6db21cd66c116f8"
+    },
+    {
+      "path": "input/payment_orders.csv",
+      "rows": 5000,
+      "sha256_run1": "13157594770852e0bdadd13dd5ffd00d7d6b5852c433f98631e5ada833531784",
+      "sha256_run2": "13157594770852e0bdadd13dd5ffd00d7d6b5852c433f98631e5ada833531784"
+    },
+    {
+      "path": "input/processor_events.csv",
+      "rows": 10566,
+      "sha256_run1": "88d7518d628b5ef87c05c98dadd0b936e759ab06da86c140907f129f163ec607",
+      "sha256_run2": "88d7518d628b5ef87c05c98dadd0b936e759ab06da86c140907f129f163ec607"
+    },
+    {
+      "path": "input/settlement_batches.csv",
+      "rows": 100,
+      "sha256_run1": "5d36ecda1dbdc5e814b89da7d83dabda29696bae1ea8dac5e6c11ae0618469ae",
+      "sha256_run2": "5d36ecda1dbdc5e814b89da7d83dabda29696bae1ea8dac5e6c11ae0618469ae"
+    },
+    {
+      "path": "input/settlement_lines.csv",
+      "rows": 4298,
+      "sha256_run1": "102b73bb2b93f83810231ceda8484bf61a7f255f94f96495b3d91bfa21ce5e10",
+      "sha256_run2": "102b73bb2b93f83810231ceda8484bf61a7f255f94f96495b3d91bfa21ce5e10"
+    },
+    {
+      "path": "input/webhook_deliveries.csv",
+      "rows": 10738,
+      "sha256_run1": "80fa06f11f5624e534486656a25480a7e7a2e7ff68ddaa3dff2092f781e291b8",
+      "sha256_run2": "80fa06f11f5624e534486656a25480a7e7a2e7ff68ddaa3dff2092f781e291b8"
+    },
+    {
+      "path": "output/canonical_events.csv",
+      "rows": 10566,
+      "sha256_run1": "9b5df9c2b0789db97f2f631887062571cccd9f7b4939dec3b245b66dd4129eef",
+      "sha256_run2": "9b5df9c2b0789db97f2f631887062571cccd9f7b4939dec3b245b66dd4129eef"
+    },
+    {
+      "path": "output/exception_status_history.csv",
+      "rows": 386,
+      "sha256_run1": "da17302efc25c501b23887de127626164d64ae3161ee1886347c495163afc784",
+      "sha256_run2": "da17302efc25c501b23887de127626164d64ae3161ee1886347c495163afc784"
+    },
+    {
+      "path": "output/exceptions.csv",
+      "rows": 190,
+      "sha256_run1": "42d2d781ccac6e1f6f76e5b40d94b44cecefa9d47e4b0ed6a6225b9a5f8603b9",
+      "sha256_run2": "42d2d781ccac6e1f6f76e5b40d94b44cecefa9d47e4b0ed6a6225b9a5f8603b9"
+    },
+    {
+      "path": "output/item_status.csv",
+      "rows": 10054,
+      "sha256_run1": "58684dbcf8139682cd790f9ebe6e996ad191fd9cfa3cc836ebd3406aab179d1f",
+      "sha256_run2": "58684dbcf8139682cd790f9ebe6e996ad191fd9cfa3cc836ebd3406aab179d1f"
+    },
+    {
+      "path": "output/json/canonical_events.json",
+      "rows": null,
+      "sha256_run1": "a553b2eea81370a9f00874e508d4857390aade4a440b5126e41e8ffd3387f059",
+      "sha256_run2": "a553b2eea81370a9f00874e508d4857390aade4a440b5126e41e8ffd3387f059"
+    },
+    {
+      "path": "output/json/exception_status_history.json",
+      "rows": null,
+      "sha256_run1": "8c3e05570b254c4725c9ea5d23bc630c8ced2859b885e4dc9da8ae5d10b24066",
+      "sha256_run2": "8c3e05570b254c4725c9ea5d23bc630c8ced2859b885e4dc9da8ae5d10b24066"
+    },
+    {
+      "path": "output/json/exceptions.json",
+      "rows": null,
+      "sha256_run1": "43c5ba5eff387eee69525fdf559bb7549208ce22aa0c7573159a035b8ca6be3b",
+      "sha256_run2": "43c5ba5eff387eee69525fdf559bb7549208ce22aa0c7573159a035b8ca6be3b"
+    },
+    {
+      "path": "output/json/item_status.json",
+      "rows": null,
+      "sha256_run1": "60f592c5b7e10d0f93044c55c7a50c068fdad47637dd204de28627308daea426",
+      "sha256_run2": "60f592c5b7e10d0f93044c55c7a50c068fdad47637dd204de28627308daea426"
+    },
+    {
+      "path": "output/json/match_items.json",
+      "rows": null,
+      "sha256_run1": "202db1882286d977370e389b67eea6680fa3ce1a2a1a5de23de01f52c07040f3",
+      "sha256_run2": "202db1882286d977370e389b67eea6680fa3ce1a2a1a5de23de01f52c07040f3"
+    },
+    {
+      "path": "output/json/reconciliation_matches.json",
+      "rows": null,
+      "sha256_run1": "931dc576a27a4ba418c4f1cfaf2bf331fb832c9aafad3c319f6c8b54a78d04f8",
+      "sha256_run2": "931dc576a27a4ba418c4f1cfaf2bf331fb832c9aafad3c319f6c8b54a78d04f8"
+    },
+    {
+      "path": "output/json/resolutions.json",
+      "rows": null,
+      "sha256_run1": "47d3e24680eeeda36cea226bb74e13797f19d33299ad0c22bac96eb4314c8d57",
+      "sha256_run2": "47d3e24680eeeda36cea226bb74e13797f19d33299ad0c22bac96eb4314c8d57"
+    },
+    {
+      "path": "output/match_items.csv",
+      "rows": 8790,
+      "sha256_run1": "227fd9b33341104cb229406a3d632bc3b6f287cb2037a4b26a53b3d2654dbe42",
+      "sha256_run2": "227fd9b33341104cb229406a3d632bc3b6f287cb2037a4b26a53b3d2654dbe42"
+    },
+    {
+      "path": "output/reconciliation_matches.csv",
+      "rows": 4392,
+      "sha256_run1": "1748b7726bdebcb50ee2bb16687e723f147b081b7e5e60a10bc47fda7c8cf710",
+      "sha256_run2": "1748b7726bdebcb50ee2bb16687e723f147b081b7e5e60a10bc47fda7c8cf710"
+    },
+    {
+      "path": "output/resolutions.csv",
+      "rows": 183,
+      "sha256_run1": "d2ec2c92b192af63228d258a610c408ab3c154099de05ba36ca4bffc7330bc5c",
+      "sha256_run2": "d2ec2c92b192af63228d258a610c408ab3c154099de05ba36ca4bffc7330bc5c"
+    },
+    {
+      "path": "run_config.json",
+      "rows": null,
+      "sha256_run1": "bc99e0203b97d733299e47e7c338e9b4fe4bf7f05bd27668de68eba38055d9f4",
+      "sha256_run2": "bc99e0203b97d733299e47e7c338e9b4fe4bf7f05bd27668de68eba38055d9f4"
+    },
+    {
+      "path": "sql/schema.sql",
+      "rows": null,
+      "sha256_run1": "cda5c07aa6f03efe492772d954c8394522405ac83f006e59f69f448964d676e1",
+      "sha256_run2": "cda5c07aa6f03efe492772d954c8394522405ac83f006e59f69f448964d676e1"
+    }
+  ]
+}
