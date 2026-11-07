@@ -1,0 +1,4 @@
+# Keep generated data byte-identical on every OS so manifest SHA-256 checksums verify.
+data/** -text
+*.csv -text
+*.sql -text
