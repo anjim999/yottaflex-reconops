@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.sqlite
+node_modules/
+web/dist/
+# Full-scale dataset: input CSVs + ground truth are committed; bulky derived files are regenerated
+# with `python -m recon all --scale full` (about 3 minutes).
+data/full/input/json/
+data/full/output/
+data/full/ground_truth/json/
+data/full/sql/seed.sql
