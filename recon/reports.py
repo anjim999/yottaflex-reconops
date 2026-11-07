@@ -15,7 +15,7 @@ def md_table(df: pd.DataFrame) -> str:
 def write_json(path: Path, obj):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, indent=2, default=lambda o: int(o) if hasattr(o, "__int__") else str(o)),
-                    encoding="utf-8")
+                    encoding="utf-8", newline="\n")
 
 
 def validation_md(v: pd.DataFrame) -> str:

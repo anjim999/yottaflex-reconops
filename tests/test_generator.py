@@ -110,3 +110,16 @@ def test_effective_dated_fees_applied_by_capture_date(tables):
             assert ln.fee_minor == fee_minor(ln.gross_minor, terms.fee_rate_bps, terms.fixed_fee_minor)
             checked.add("v2" if terms is r else "v1")
     assert checked == {"v1", "v2"}, "both fee versions exercised"
+
+
+def test_committed_starter_manifest_checksums_verify():
+    """Every file listed in the committed manifest must hash to the recorded SHA-256 (byte-identical on any OS)."""
+    import hashlib
+    import json
+    from pathlib import Path
+
+    base = Path(__file__).resolve().parent.parent / "data" / "starter"
+    manifest = json.loads((base / "manifest.json").read_text(encoding="utf-8"))
+    bad = [f["path"] for f in manifest["files"]
+           if hashlib.sha256((base / f["path"]).read_bytes()).hexdigest() != f["sha256"]]
+    assert not bad, bad

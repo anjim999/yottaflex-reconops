@@ -113,7 +113,7 @@ def write_manifest(root: Path, run_config: dict, command: str) -> dict:
     files = []
     for p in sorted(root.rglob("*")):
         if p.is_file() and p.name != "manifest.json" and p.suffix in {".csv", ".json", ".sql"} and "reports" not in p.parts:
-            rows = sum(1 for _ in p.open(encoding="utf-8")) - 1 if p.suffix == ".csv" else None
+            rows = sum(1 for _ in p.open(encoding="utf-8", newline="\n")) - 1 if p.suffix == ".csv" else None
             files.append({"path": p.relative_to(root).as_posix(), "rows": rows, "bytes": p.stat().st_size,
                           "sha256": sha256(p)})
     manifest = {
@@ -123,5 +123,5 @@ def write_manifest(root: Path, run_config: dict, command: str) -> dict:
                       "data was used; processor, bank and merchant names are fictional.",
         "files": files,
     }
-    (root / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    (root / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8", newline="\n")
     return manifest

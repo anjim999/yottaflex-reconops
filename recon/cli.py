@@ -32,7 +32,7 @@ def cmd_generate(scale, seed, base: Path, sql=True):
     reports.write_json(base / "run_config.json", r["run_config"])
     if sql:
         p["sql"].mkdir(parents=True, exist_ok=True)
-        (p["sql"] / "schema.sql").write_text(ddl(), encoding="utf-8")
+        (p["sql"] / "schema.sql").write_text(ddl(), encoding="utf-8", newline="\n")
     print(f"generated {scale} (seed {seed}) -> {base}")
     return r
 
@@ -66,10 +66,10 @@ def cmd_validate(base: Path):
     rp = paths(base)["reports"]
     rp.mkdir(parents=True, exist_ok=True)
     v.to_csv(rp / "validation_summary.csv", index=False, lineterminator="\n")
-    (rp / "validation_summary.md").write_text(reports.validation_md(v), encoding="utf-8")
+    (rp / "validation_summary.md").write_text(reports.validation_md(v), encoding="utf-8", newline="\n")
     fails = v[v.status == "FAIL"]
     from .profile import profile, profile_md
-    (rp / "data_profile.md").write_text(profile_md(profile(t)), encoding="utf-8")
+    (rp / "data_profile.md").write_text(profile_md(profile(t)), encoding="utf-8", newline="\n")
     print(f"validation: {len(v)} checks, {len(fails)} failed")
     if len(fails):
         print(fails.to_string())
@@ -107,7 +107,7 @@ def cmd_evaluate(base: Path):
     reports.write_json(rp / "metrics.json", {"detection": scores.to_dict("records"),
                                              "normal_case_decisions": decisions.to_dict("records"),
                                              "idempotency": idem, "kpis": kpi})
-    (rp / "metrics.md").write_text(reports.metrics_md(scores, decisions, kpi, idem), encoding="utf-8")
+    (rp / "metrics.md").write_text(reports.metrics_md(scores, decisions, kpi, idem), encoding="utf-8", newline="\n")
     tot = scores.iloc[-1]
     print(f"detection: precision {tot.precision}, recall {tot.recall}, f1 {tot.f1}; idempotency {idem}")
     return scores, decisions, kpi, idem
@@ -115,7 +115,7 @@ def cmd_evaluate(base: Path):
 
 def cmd_sql(base: Path):
     t = all_tables(base)
-    (paths(base)["sql"] / "seed.sql").write_text(seed_sql(t), encoding="utf-8")
+    (paths(base)["sql"] / "seed.sql").write_text(seed_sql(t), encoding="utf-8", newline="\n")
     print("wrote sql/seed.sql")
 
 

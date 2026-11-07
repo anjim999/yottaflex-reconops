@@ -24,4 +24,4 @@ def data_dictionary() -> str:
 
 def write(root: Path):
     (root / "docs").mkdir(exist_ok=True)
-    (root / "docs" / "data_dictionary.md").write_text(data_dictionary(), encoding="utf-8")
+    (root / "docs" / "data_dictionary.md").write_text(data_dictionary(), encoding="utf-8", newline="\n")
