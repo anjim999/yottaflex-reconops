@@ -101,5 +101,5 @@ Evidence paths are relative to the repository root. Reports are under `data/<sca
 ## Submission checklist
 
 - [x] README explains how to run it
-- [x] Tests: `pytest` (39 tests: generator, engine, rules, API)
-- [ ] Public GitHub repository (final step)
+- [x] Tests: `pytest` (40 tests: generator, engine, rules, API, committed-data checksums)
+- [x] Public GitHub repository: https://github.com/anjim999/yottaflex-reconops
