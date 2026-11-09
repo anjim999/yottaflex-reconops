@@ -2,3 +2,6 @@
 data/** -text
 *.csv -text
 *.sql -text
+
+# Generated datasets are not source code: exclude them from GitHub language stats and collapse them in diffs.
+data/** linguist-generated
